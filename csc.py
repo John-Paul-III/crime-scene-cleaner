@@ -89,8 +89,8 @@ def main():
                 else:
                     if i == 0:
                         print(f'{COLOR_IRRELEVANT}ignoring group {group_name}{COLOR_RESET}')
-                        continue
-                    print(f"{COLOR_IRRELEVANT}ignoring stream {stream_name} of group {group_name}{COLOR_RESET}")
+                    else:
+                        print(f"{COLOR_IRRELEVANT}ignoring stream {stream_name} of group {group_name}{COLOR_RESET}")
 
                 stream_name = None
 
