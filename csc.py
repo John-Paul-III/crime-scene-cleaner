@@ -79,7 +79,7 @@ def main():
                         print(f"deleting {COLOR_DELETE}stream{COLOR_RESET} {stream_name} from group {group_name}".strip())
 
                         if not args.dry:
-                            resp, code = shell_exec(['aws', 'logs', 'delete-log-sream', '--log-group-name', group_name, '--log-stream-name', stream_name])
+                            resp, code = shell_exec(['aws', 'logs', 'delete-log-stream', '--log-group-name', group_name, '--log-stream-name', stream_name])
                             if code != 0:
                                 print(f'{COLOR_FAIL}[FAILED]{COLOR_RESET} (error code: {code})')
                                 continue
